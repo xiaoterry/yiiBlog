@@ -4,6 +4,10 @@ $params = require(__DIR__ . '/params.php');
 
 $config = [
     'modules'=>[
+        'redactor' => [
+            'class' => 'yii\redactor\RedactorModule',
+            'imageAllowExtensions' => ['jpg','png','gif'],
+        ],
         'admin' => [
             'class' => 'app\modules\admin\Admin',
         ],

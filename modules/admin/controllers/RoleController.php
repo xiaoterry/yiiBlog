@@ -185,4 +185,9 @@ class RoleController extends Controller{
         }
         return $treeStr;
     }
+
+    public function actionTest()
+    {
+        dump(123);
+    }
 }

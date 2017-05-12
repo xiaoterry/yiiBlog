@@ -23,13 +23,13 @@ $this->context->layout = false;
 
     <title><?= Html::encode($this->title) ?></title>
 
-    <link href="/plus2016/web/adminx/css/style.css" rel="stylesheet">
-    <link href="/plus2016/web/adminx/css/style-responsive.css" rel="stylesheet">
+    <link href="/adminx/css/style.css" rel="stylesheet">
+    <link href="/adminx/css/style-responsive.css" rel="stylesheet">
 
      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
      <!--[if lt IE 9]>
-    <script src="/plus2016/web/adminx/js/html5shiv.js"></script>
-    <script src="/plus2016/web/adminx/js/respond.min.js"></script>
+    <script src="/adminx/js/html5shiv.js"></script>
+    <script src="/adminx/js/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -51,10 +51,10 @@ $this->context->layout = false;
 </section>
 
 <!-- Placed js at the end of the document so the pages load faster -->
-<script src="/plus2016/web/adminx/js/jquery-1.10.2.min.js"></script>
-<script src="/plus2016/web/adminx/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="/plus2016/web/adminx/js/bootstrap.min.js"></script>
-<script src="/plus2016/web/adminx/js/modernizr.min.js"></script>
+<script src="/adminx/js/jquery-1.10.2.min.js"></script>
+<script src="/adminx/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/adminx/js/bootstrap.min.js"></script>
+<script src="/adminx/js/modernizr.min.js"></script>
 
 
 <!--common scripts for all pages-->

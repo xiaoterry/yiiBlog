@@ -31,11 +31,11 @@ AppAsset::register($this);
 
         <!--logo and iconic logo start-->
         <div class="logo">
-            <a href="index.html"><img src="/plus2016/web/adminx/images/logo.png" alt=""></a>
+            <a href="index.html"><img src="/adminx/images/logo.png" alt=""></a>
         </div>
 
         <div class="logo-icon text-center">
-            <a href="index.html"><img src="/plus2016/web/adminx/images/logo_icon.png" alt=""></a>
+            <a href="index.html"><img src="/adminx/images/logo_icon.png" alt=""></a>
         </div>
         <!--logo and iconic logo end-->
 
@@ -44,7 +44,7 @@ AppAsset::register($this);
             <!-- visible to small devices only -->
             <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media logged-user">
-                    <img alt="" src="/plus2016/web/adminx/images/photos/user-avatar.png" class="media-object">
+                    <img alt="" src="/adminx/images/photos/user-avatar.png" class="media-object">
                     <div class="media-body">
                         <h4><a href="#">John Doe</a></h4>
                         <span>"Hello There..."</span>
@@ -65,6 +65,14 @@ AppAsset::register($this);
                     <ul class="sub-menu-list">
                         <li class="<?php if ($this->context->id == 'admin' && in_array($this->context->action->id, ['admin-list', 'admin-edit'])) echo 'active' ?>"><a href="<?= Url::toRoute(['admin/admin-list']) ?>"> 管理员管理 </a></li>
                         <li class="<?php if ($this->context->id == 'role' && in_array($this->context->action->id, ['role-list', 'role-edit', 'role-priv', 'admin-list'])) echo 'active' ?>"><a href="<?=Url::toRoute('//admin/role/role-list')?>"> 角色管理 </a></li>
+                        <li class="<?php if ($this->context->id == 'menu' && in_array($this->context->action->id, ['menu-list', 'menu-edit'])) echo 'active' ?>"><a href="<?=Url::toRoute('//admin/menu/menu-list')?>"> 菜单管理 </a></li>
+                    </ul>
+                </li>
+                <li class="menu-list <?php if (in_array($this->context->id, ['category', 'tag', 'article'])) echo 'nav-active' ?>"><a href=""><i class="fa fa-laptop"></i> <span>文章设置</span></a>
+                    <ul class="sub-menu-list">
+                        <li class="<?php if ($this->context->id == 'article' && in_array($this->context->action->id, ['article-list', 'article-edit'])) echo 'active' ?>"><a href="<?= Url::toRoute(['article/article-list']) ?>"> 文章管理 </a></li>
+                        <li class="<?php if ($this->context->id == 'category' && in_array($this->context->action->id, ['category-list', 'category-edit'])) echo 'active' ?>"><a href="<?= Url::toRoute(['category/category-list']) ?>"> 分类管理 </a></li>
+                        <li class="<?php if ($this->context->id == 'tag' && in_array($this->context->action->id, ['tag-list', 'tag-edit'])) echo 'active' ?>"><a href="<?= Url::toRoute(['tag/tag-list']) ?>"> 标签管理 </a></li>
                     </ul>
                 </li>
             </ul>
@@ -113,7 +121,7 @@ AppAsset::register($this);
                     </li>
                     <li>
                         <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-<!--                            <img src="/plus2016/web/plus2016/web/adminx/images/photos/user-avatar.png" alt="" />-->
+<!--                            <img src="/adminx/images/photos/user-avatar.png" alt="" />-->
                             <?php echo Yii::$app->user->identity->username ?>
                             <span class="caret"></span>
                         </a>

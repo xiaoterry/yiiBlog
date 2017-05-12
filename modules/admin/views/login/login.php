@@ -17,7 +17,7 @@ use yii\bootstrap\ActiveForm;
 ]) ?>
     <div class="form-signin-heading text-center">
         <h1 class="sign-title">后台登录</h1>
-        <img src="/plus2016/web/adminx/images/login-logo.png" alt=""/>
+        <img src="/adminx/images/login-logo.png" alt=""/>
     </div>
     <div class="login-wrap">
         <?= $form->field($loginform, 'username')->label(false)->textInput(['class' => 'form-control', 'placeholder' => '用户名', 'autofocus' => true]) ?>
@@ -36,7 +36,6 @@ use yii\bootstrap\ActiveForm;
             </a>
         </div>
         <label class="checkbox">
-<!--            --><?//= $form->field($loginform, 'rememberMe')->checkbox() ?>
             <input type="checkbox" name="LoginForm[rememberMe]" value="1"> 记住我
         </label>
 

@@ -33,7 +33,7 @@ class AppAsset extends AssetBundle
     public $js = [
 
         // Placed js at the end of the document so the pages load faster
-        'adminx/js/jquery-1.10.2.min.js',
+//        'adminx/js/jquery-1.10.2.min.js',
         'adminx/js/jquery-ui-1.9.2.custom.min.js',
         'adminx/js/jquery-migrate-1.2.1.min.js',
         'adminx/js/bootstrap.min.js',
